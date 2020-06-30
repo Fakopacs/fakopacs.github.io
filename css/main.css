@@ -378,7 +378,7 @@ ul.services-content {
 /*.....................................................Felmeres.....................*/
 
 #felmeres{
-  background-image: url(/img/fenyő_kültér.JPG);
+  background-image: url(/img/fenyő_asztal_fökep.JPEG);
 background-position: center;
 background-repeat: no-repeat;
 
@@ -511,7 +511,7 @@ ul.felmeres-content {
 @media (max-width:1000px) {
   .felmeres2-content li {
     flex-basis: 100%;
-    margin-bottom: 65px;
+    margin-bottom: 0px;
 
 
   }
