@@ -369,6 +369,12 @@ ul.services-content {
   }
 }
 
+.services-area p {
+ font-size: 18px;
+ margin-top: 40px;
+ font-style: italic;
+}
+
 /*.....................................................Felmeres.....................*/
 
 #felmeres{
@@ -526,7 +532,10 @@ ul.felmeres-content {
   border-bottom: 1px solid #a02c2d;
  }
 
- 
+ .felmeres2-content li.felsorolas p{
+   text-align: left;
+   margin-bottom: 30px;
+ }
 
 /*.........................cnc............................*/
 
