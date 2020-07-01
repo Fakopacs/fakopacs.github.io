@@ -1,0 +1,794 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+ul,nav{
+  list-style: none;
+
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+}
+
+/*........................Logo.............................*/
+
+
+.logo-area img {
+  width: 20%;
+  left: 50%;
+  top: 0;
+  content: "";
+}
+
+/*.....................................................*/
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-radius: 0px;
+    
+  }
+  
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+/* ..........................Banner area...............................*/
+
+section {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+@media(max-width: 1000px){
+  section{
+    padding: 100px 50px;
+  }
+}
+@media(max-width: 600px){
+  section{
+    padding: 125px 2px ;
+  }
+}
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height:2;
+  
+}
+
+.banner-area {
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+.banner-area .banner-img {
+  background-image: url(../img/fökep.JPEG);
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+
+}
+
+.banner-area .banner-img:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .7;
+
+}
+
+.banner-area h1 {
+  margin-bottom: 0px;
+  font-size: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 77px;
+  
+
+}
+
+.banner-area h2 {
+  margin-bottom: 15px;
+  font-size: 65px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 245px;
+  
+
+}
+
+
+.banner-area h3 {
+  margin-bottom: 40px;
+  font-family: 'Caveat';
+  font-size: 70px;
+  margin-left: 115px;
+  color: #a02c2d;
+
+
+}
+
+.banner-area a.banner-btn{
+  padding: 15px 35px;
+  background: #a02c2d;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+@media(max-width:800px) {
+  .banner-area{
+    min-height: 600px;
+  }
+  .banner-area h1 {
+    font-size: 64px;
+  }
+  .banner-area h2 {
+    font-size: 40px;
+    margin-left:200px;
+  }
+
+  .banner-area h3{
+    font-size: 40px;
+    margin-left:120px;
+  }
+  .banner-area a.banner-btn{
+    padding: 7px 10px;
+  }
+}
+
+@media(max-width:422px) {
+  .banner-area{
+    min-height: 600px;
+  }
+  .banner-area h1 {
+    font-size: 64px;
+    margin-left: 1px;
+  }
+  .banner-area h2 {
+    font-size: 40px;
+    margin-left:105px;
+  }
+
+  .banner-area h3{
+    font-size: 35px;
+    margin-left:70px;
+  }
+  .banner-area a.banner-btn{
+    padding: 7px 10px;
+  }
+}
+
+
+
+/*.................................About area..................................... */
+
+
+
+.section-title{
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 5%;
+  }
+
+
+  .about{
+    
+   background-color: #fff;
+    
+     
+   }
+   
+   
+   
+   
+   .about-content li {
+     padding: 0px;
+     padding-bottom: 0px;
+     flex-basis: 100%;
+     text-align: center;
+     background-color: #fff;
+     opacity: 0.85;
+    
+   
+   }
+   
+   .about-content li i{
+     font-size: 50px;
+     color: #a02c2d;
+     margin-bottom: 25px;
+   }
+   .about-content li h4{
+     font-size: 20px;
+     margin-bottom: 25px;
+   
+   }
+   .about-content li h4{
+     margin: 0;
+     text-align: center;
+     color: #000;
+     font-size: 50px;
+     padding-bottom: 20px;
+   }
+   
+   .about-content li p{
+     margin: 0;
+     text-align: center;
+     color: #000;
+     font-size: 20px;
+     font-weight: 600;
+   
+     
+   }
+   
+   @media (max-width:1000px) {
+     .about-content li {
+       flex-basis: 100%;
+       margin-bottom: 65px;
+   
+   
+     }
+     .about-content li:last-child{
+       margin-bottom: 0;
+   
+     }
+     .about-content li p{
+       padding: 0;
+     }
+   }
+
+
+
+
+
+
+
+
+/*..................................Service area.......................................*/
+
+#services{
+  background: #ddd;
+
+}
+
+ul.services-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services-content li {
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center;
+  
+
+}
+
+.services-content li i{
+  font-size: 50px;
+  color: #a02c2d;
+  margin-bottom: 25px;
+}
+.services-content li h4{
+  font-size: 20px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #a02c2d;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+.services-content li p{
+  margin: 0;
+  line-height:3;
+  font-size: 20px;
+}
+
+@media (max-width:1000px) {
+  .services-content li {
+    flex-basis: 100%;
+    margin-bottom: 65px;
+
+
+  }
+  .services-content li:last-child{
+    margin-bottom: 0;
+
+  }
+  .services-content li p{
+    padding: 0;
+  }
+}
+
+.services-area p {
+ font-size: 18px;
+ margin-top: 40px;
+ 
+}
+
+/*.....................................................Felmeres.....................*/
+
+#felmeres{
+  background-image: url(/img/fenyö_asztal.JPEG);
+background-position: center;
+background-repeat: no-repeat;
+
+  
+
+}
+
+ul.felmeres-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+
+.felmeres-content li {
+  padding: 30px;
+  padding-bottom: 30px;
+  flex-basis: 60%;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.85;
+  border-radius: 10px;
+  
+
+}
+
+.felmeres-content :hover{
+ opacity: 1;
+
+}
+
+.felmeres-content li i{
+  font-size: 50px;
+  color: #a02c2d;
+  margin-bottom: 25px;
+}
+.felmeres-content li h4{
+  font-size: 20px;
+  margin-bottom: 25px;
+
+}
+.felmeres-content li h4{
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.felmeres-content li p{
+  margin: 0;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  
+
+  
+}
+
+@media (max-width:1000px) {
+  .felmeres-content li {
+    flex-basis: 100%;
+    margin-bottom: 65px;
+
+
+  }
+  .felmeres-content li:last-child{
+    margin-bottom: 0;
+
+  }
+  .felmeres-content li p{
+    padding: 0;
+  }
+}
+
+
+/*............................................Felmeres2......................*/
+
+#felmeres2{
+ background-color: #fff;
+ 
+  
+}
+
+
+
+
+.felmeres2-content li {
+  padding: 30px;
+  padding-bottom: 30px;
+  flex-basis: 100%;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.85;
+ 
+
+}
+
+.felmeres2-content li i{
+  font-size: 50px;
+  color: #a02c2d;
+  margin-bottom: 25px;
+  
+}
+.felmeres2-content li h4{
+  font-size: 20px;
+  margin-bottom: 25px;
+
+}
+.felmeres2-content li h4{
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.felmeres2-content li p{
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+
+  
+}
+
+@media (max-width:1000px) {
+  .felmeres2-content li {
+    flex-basis: 100%;
+    margin-bottom: 0px;
+
+
+  }
+  .felmeres2-content li:last-child{
+    margin-bottom: 0;
+
+  }
+  .felmeres2-content li p{
+    padding: 0;
+  }
+}
+
+.felmeres2-area a.banner-btn {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #a02c2d;
+  margin-top: 10%;
+  border-bottom: 1px solid #a02c2d;
+ }
+
+ .felmeres2-content li.felsorolas p{
+   text-align: left;
+   margin-bottom: 30px;
+ }
+
+/*.........................cnc............................*/
+
+#cnc{
+  background-image: url(/img/facnc.JPG);
+background-position: center;
+width: 100%;
+background-repeat: no-repeat;
+  
+
+}
+
+ul.cnc-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+
+.cnc-content li {
+  padding: 30px;
+  padding-bottom: 30px;
+  flex-basis: 60%;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.85;
+  border-radius: 10px;
+  
+
+}
+
+.cnc-content :hover{
+ opacity: 1;
+
+}
+
+.cnc-content li i{
+  font-size: 50px;
+  color: #a02c2d;
+  margin-bottom: 25px;
+}
+.cnc-content li h4{
+  font-size: 20px;
+  margin-bottom: 25px;
+
+}
+.cnc-content li h4{
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.cnc-content li p{
+  margin: 0;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+
+  
+}
+
+@media (max-width:1000px) {
+  .cnc-content li {
+    flex-basis: 100%;
+    margin-bottom: 65px;
+
+
+  }
+  .cnc-content li:last-child{
+    margin-bottom: 0;
+
+  }
+  .cnc-content li p{
+    padding: 0;
+  }
+}
+
+
+
+/*.......................Gallery....................................*/
+
+.gallery i{
+  font-size: 50px;
+  color: #a02c2d;
+  margin-bottom: 25px;
+}
+
+.gallery h6{
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: 100;
+  
+  
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+ 
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+.gallery a.banner-btn{
+  padding: 15px 35px;
+  background: #a02c2d;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 10%;
+ 
+}
+
+
+
+.gallery h6 {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
+
+/*.................................contact area...........................................*/
+
+#contact{
+  background: #ddd;
+
+
+}
+
+.contact-content h2 {
+  border-bottom: 1px solid #a02c2d;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ul.contact-content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.contact-content li{
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center;
+
+}
+
+.contact-content li i{
+  font-size: 50px;
+  color:#a02c2d;
+margin-bottom: 25px;
+
+}
+
+.contact-content li p{
+  margin: 0;
+  font-size: 20px;
+
+
+}
+
+@media(max-width: 1000px){
+  .contact-content li {
+    flex-basis: 100%;
+    margin-bottom: 65px;
+
+  }
+  .contact-content li:last-child{
+    margin-bottom: 0;
+
+  }
+  .contact-content li p{
+    padding: 0;
+
+  }
+
+
+}
+/*.......................Footer................................*/
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding: 20px 0;
+}
+
+
+iframe {
+  width: 100%;
+  height: 400px ;
+  border: 0px;
+  
+}
